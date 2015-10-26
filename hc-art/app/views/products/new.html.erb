@@ -1,2 +1,33 @@
 <h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<h1>Add a new picture</h1>
+<%= form_for @product do |f| %>
+
+	<div> 
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+
+	<div>
+		<%= f.label :image %>
+		<%= f.text_field :image %>
+	</div>
+
+		<div> 
+		<%= f.label :description %>
+		<%= f.text_field :description%>
+	</div>
+
+	<div> 
+		<%= f.label :printprice %>
+		<%= f.text_field :printprice %>
+	</div>
+
+	<div> 
+		<%= f.label :gicleeprice %>
+		<%= f.text_field :gicleeprice %>
+	</div>
+
+	<div> 
+		<%= f.label :size %>
+		<%= f.text_field :size %>
+	</div>
