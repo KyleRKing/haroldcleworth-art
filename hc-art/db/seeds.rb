@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+products = Product.create([
+	{title: "practice", image: "picture.jpg", description: "short", printprice: 200, gicleeprice: 400, size: "5x5"}
+	])
