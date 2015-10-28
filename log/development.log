@@ -3532,3 +3532,11 @@ Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-28 12:51:44 -0700
+
+
+Started GET "/categories" for ::1 at 2015-10-28 13:13:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 356ms (Views: 335.3ms | ActiveRecord: 5.4ms)
