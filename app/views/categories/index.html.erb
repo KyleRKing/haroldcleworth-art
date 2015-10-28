@@ -6,13 +6,16 @@
 <center>
 <table style="width:100%" align="center">
   <% @categories.each do | category | %>
-  <tr>
-    <td>
+  <!-- <tr>
+    <td> -->
+    <div class="container">
       <%= link_to category.title, category_path( category ) %><br>
     
       <img src="<%= category.image %>" class="CateogryImage" style="width:250px;height:200px" alt="<%= category.alt %>"/>
-    </td>
-  </tr>
+ <!--    </td>
+
+  </tr> -->
+    </div>  
   <% end %>
 </table>
 
