@@ -8,6 +8,12 @@
 
 </p>
 
+<!-- write out how to show all items in a category -->
+<center>
+<% @items.each do | item | %>
+	<h2><%= item.title %></h2>
+	<p><%= item.printprice %> </p>
 
-
+<% end %>
+</center>
 </div>

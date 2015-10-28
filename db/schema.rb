@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20151027194635) do
   end
 
   create_table "items", force: :cascade do |t|
+    t.integer  "category_id"
     t.string   "title"
     t.string   "image"
     t.string   "description"
@@ -34,5 +35,7 @@ ActiveRecord::Schema.define(version: 20151027194635) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "items", ["category_id"], name: "index_items_on_category_id", using: :btree
 
 end
