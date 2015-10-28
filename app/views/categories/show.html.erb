@@ -12,7 +12,9 @@
 <center>
 <% @items.each do | item | %>
 	<h2><%= item.title %></h2>
-	<p><%= item.printprice %> </p>
+	<%= image_tag(item.image, height: '300', width: '400') %>
+	
+	<p>USD $<%= item.printprice %> </p>
 
 <% end %>
 </center>
