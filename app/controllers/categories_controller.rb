@@ -9,6 +9,7 @@ require_dependency "/application_controller"
 
     # GET /categories/1
     def show
+      @category = Category.find(params[:id])
     end
 
     # GET /categories/new
